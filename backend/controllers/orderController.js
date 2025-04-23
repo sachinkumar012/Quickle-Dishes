@@ -3,9 +3,7 @@ import userModel from "../models/userModel.js"
 import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-const currency="inr";
-const deliveryCharge=50;
-const frontend_URL='https://quickle-dishes-frontend.onrender.com';
+ const frontend_URL='https://quickle-dishes-frontend.onrender.com';
 
 // Placing User Order for Frontend
 const placeOrder = async (req, res) => {
